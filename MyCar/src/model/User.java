@@ -15,6 +15,7 @@ public class User {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long idUser;
 	private String UserName;
+	private String Prezime;
 	private String Password;
 	private String Novcanik;
     private int BrojLicneKarte;	
@@ -42,6 +43,13 @@ public class User {
 	}
 	public void setUserName(String userName) {
 		UserName = userName;
+	}
+	
+	public String getPrezime() {
+		return Prezime;
+	}
+	public void setPrezime(String prezime) {
+		Prezime = prezime;
 	}
 	public String getPassword() {
 		return Password;

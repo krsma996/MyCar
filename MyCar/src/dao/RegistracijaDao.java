@@ -21,10 +21,11 @@ public class RegistracijaDao {
 	}
 	
 	
-	public boolean UpisiUseraUBazu(String UserName,String Password,String BrojLicneKarte) {
+	public boolean UpisiUseraUBazu(String UserName,String Password,String Prezime,String BrojLicneKarte) {
 		User user = new User();
 		user.setUserName(UserName);
 		user.setPassword(Password);
+		user.setPrezime(Prezime);
 	    user.setBrojLicneKarte(Integer.parseInt(BrojLicneKarte));  
 	    Rola rola;
 	    

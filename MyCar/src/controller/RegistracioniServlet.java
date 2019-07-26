@@ -34,7 +34,7 @@ public class RegistracioniServlet extends HttpServlet {
 		     boolean provera = ValidacijaZaRegistraciju.ProveriPassword(Password, RepeatedPassword);
 		     
 		     if(provera) {
-		    	 boolean UpisiUsera = reg.UpisiUseraUBazu(UserName, RepeatedPassword, BrojLicneKarte);
+		    	 boolean UpisiUsera = reg.UpisiUseraUBazu(UserName, RepeatedPassword, Prezime, BrojLicneKarte);
 		    	 if(UpisiUsera) {
 		    		 response.sendRedirect("index.html");
 		    	 }else {
