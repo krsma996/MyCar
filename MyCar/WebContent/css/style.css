@@ -29,3 +29,35 @@
   font-size: xx-large;
   font-stretch: extra-condensed;
 }
+#formaRegistracija{
+	
+	width: 400px;
+	height: 300px;
+	border: 2px solid red;
+	background-color: black;
+	text-align: center;
+	padding-top: 5%;
+	border-radius: 15px;
+	
+}
+
+#formaRegistracija input {
+	
+	width: 80%;
+	height: 10%;
+	border-radius: 15px;
+}
+
+#formaRegistracija input[type = "submit"] {
+	
+	width: 80%;
+	height: 20%;
+	border-radius: 15px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+#formaRegistracija input[type = "submit"]:hover {
+	background-color: #40ff00;
+}
