@@ -7,7 +7,7 @@
 
 <!-- Database connection settings -->
 <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-<property name="connection.url">jdbc:mysql://localhost:3306/</property>
+<property name="connection.url">jdbc:mysql://localhost:3306/mycar</property>
 <property name="connection.username">root</property>
 <property name="connection.password">nikola1996</property>
 
@@ -27,10 +27,9 @@
 <property name="hbm2ddl.auto">create</property>
 
 <!-- Names the annotated entity class -->
-<mapping class=""/>
-<mapping class=""/>
-<mapping class=""/>
-
+<mapping class="model.Car"/>
+<mapping class="model.User"/>
+<mapping class="model.Racun"/>
 
 
 </session-factory>
