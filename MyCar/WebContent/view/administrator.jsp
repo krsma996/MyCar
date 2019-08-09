@@ -5,6 +5,8 @@
 <%@ page import="model.User" %>
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.util.List"%>
+<%@page import="dao.AdminDao"%>
+
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -20,8 +22,39 @@
 	
 	<h1>DOBRODOŠLI <%=user.getUserName() %> </h1>
 	
-	<p>Ovo je administratorova strana. Ovde cu ubaciti stvari koje se ticu administratorskih poslova</p>
+	<p>Adminska strana </p>
 	
 	<a href = "addBalance.jsp"><button>ADD BALANCE</button></a>
 	<a href = "updateBalance.jsp"><button>UPDATE BALANCE</button></a>
 	<a href = "addCar.jsp"><button>ADD CAR</button></a>
+	
+	<hr>
+	<br>
+	<%
+	   List<User> listaUsera = new ArrayList<>();
+	    listaUsera = AdminDao.vratiSveUsere();
+	%>
+	
+	
+<table border="1">
+       <tr>
+        <th>ID</th>
+        <th>UserName</th>  
+        <th>Password</th>  
+        <th>Novcanik</th>         
+       </tr>
+         <%
+          for(User u: listaUsera){
+         %>
+         <tr>
+        <td> <%=u.getIdUser() %> </td>
+        <td> <%=u.getUserName() %></td>
+        <td> <%=u.getPassword() %></td>
+        <td> <%=u.getNovcanik() %></td>
+        <%
+          }
+        %>
+      </tr>
+</table>
+</body>
+</html>
