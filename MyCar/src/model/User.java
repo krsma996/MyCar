@@ -17,7 +17,7 @@ public class User {
 	private String UserName;
 	private String Prezime;
 	private String Password;
-	private String Novcanik;
+	private double Novcanik;
     private int BrojLicneKarte;	
     @OneToMany
 	List <Racun> listaRacuna = new ArrayList<Racun>();
@@ -57,10 +57,11 @@ public class User {
 	public void setPassword(String password) {
 		Password = password;
 	}
-	public String getNovcanik() {
+	
+	public double getNovcanik() {
 		return Novcanik;
 	}
-	public void setNovcanik(String novcanik) {
+	public void setNovcanik(double novcanik) {
 		Novcanik = novcanik;
 	}
 	public List<Racun> getListaRacuna() {

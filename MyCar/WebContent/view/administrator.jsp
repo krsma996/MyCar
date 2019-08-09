@@ -32,7 +32,7 @@
 	<br>
 	<%
 	   List<User> listaUsera = new ArrayList<>();
-	    listaUsera = AdminDao.vratiSveUsere();
+	   listaUsera = AdminDao.vratiSveUsere();
 	%>
 	
 	

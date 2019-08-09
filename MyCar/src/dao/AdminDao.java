@@ -9,6 +9,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 import model.Car;
+import model.Rola;
 import model.User;
 
 public class AdminDao {
@@ -62,9 +63,49 @@ public class AdminDao {
 		}
 	}
 	
+	public static boolean DodajUseruNovac(User user,String Balance) {
+		double uplata = Double.parseDouble(Balance);
+		double staroStanje = user.getNovcanik();
+		double konacno= uplata + staroStanje;
+		
+		if(user.getRola().equals(Rola.ADMINISTRATOR)) {
+			user.setNovcanik(0);
+		}else {
+			user.setNovcanik(konacno);
+		}
+		
+		Session session = sf.openSession();
+		session.beginTransaction();
+		
+		try {
+			session.update(user);
+			session.getTransaction().commit();
+			return true;
+		} catch (Exception e) {
+			session.getTransaction().rollback();
+			return false;
+		}finally {
+	      session.close(); 
+		}		
+	}
 	
-	
-	
+	public static boolean UpdateUseruNovac(User user,String Balance) {
+		double uplata = Double.parseDouble(Balance);
+		user.setNovcanik(uplata);
+		Session session = sf.openSession();
+		session.beginTransaction();
+		
+		try {
+			session.update(user);
+			session.getTransaction().commit();
+			return true;
+		} catch (Exception e) {
+			session.getTransaction().rollback();
+			return false;
+		}finally {
+			session.close();
+		}
+	}
 	
 	
 	
