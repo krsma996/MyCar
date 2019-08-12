@@ -39,7 +39,7 @@ public class AdminDao {
 		
 	}
 	
-	public static boolean DodajAutoUBazu(String Marka,String Model, String Cena, String Boja,String GodinaProizvodnje) {
+	public static boolean DodajAutoUBazu(String Marka,String Model, String Cena, String Boja,String GodinaProizvodnje,String Stanje) {
 		Car car = new Car();
 		car.setMarka(Marka);
 		car.setModel(Model);
@@ -47,6 +47,7 @@ public class AdminDao {
 		car.setCena(CenaAuta);
 		car.setBoja(Boja);
 		car.setGodinaProizvodnje(Integer.parseInt(GodinaProizvodnje));
+		car.setStanje(Integer.parseInt(Stanje));
 		
 		Session session = sf.openSession();
 		session.beginTransaction();

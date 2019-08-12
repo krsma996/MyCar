@@ -26,8 +26,9 @@ public class AddCarServlet extends HttpServlet {
 		String Cena = request.getParameter("Cena");
 		String Boja = request.getParameter("Boja");
 		String GodinaProizvodnje = request.getParameter("GodinaProizvodnje");
+		String Stanje = request.getParameter("Stanje");
 		
-		boolean upisiAuto = AdminDao.DodajAutoUBazu(Marka, Model, Cena, Boja, GodinaProizvodnje);
+		boolean upisiAuto = AdminDao.DodajAutoUBazu(Marka, Model, Cena, Boja, GodinaProizvodnje, Stanje);
 		if(upisiAuto) {
 			response.sendRedirect("view/administrator.jsp");
 		}else {

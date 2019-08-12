@@ -27,6 +27,7 @@
 	<a href = "addBalance.jsp"><button>ADD BALANCE</button></a>
 	<a href = "updateBalance.jsp"><button>UPDATE BALANCE</button></a>
 	<a href = "addCar.jsp"><button>ADD CAR</button></a>
+	<a href="../index.html"> back to index</a>
 	
 	<hr>
 	<br>
@@ -56,5 +57,6 @@
         %>
       </tr>
 </table>
+
 </body>
 </html>

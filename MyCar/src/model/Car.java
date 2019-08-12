@@ -4,7 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+
 
 @Entity
 public class Car {
@@ -16,10 +16,7 @@ public class Car {
 	private double Cena;
 	private String Boja;
 	private int GodinaProizvodnje;
-	@ManyToOne
-	private Racun racun;
-	@ManyToOne
-	private User user;
+	private int Stanje;
 	
 	public long getIdCar() {
 		return idCar;
@@ -57,18 +54,13 @@ public class Car {
 	public void setGodinaProizvodnje(int godinaProizvodnje) {
 		GodinaProizvodnje = godinaProizvodnje;
 	}
-	public Racun getRacun() {
-		return racun;
+	public int getStanje() {
+		return Stanje;
 	}
-	public void setRacun(Racun racun) {
-		this.racun = racun;
+	public void setStanje(int stanje) {
+		Stanje = stanje;
 	}
-	public User getUser() {
-		return user;
-	}
-	public void setUser(User user) {
-		this.user = user;
-	}
+
 	
 	
 	

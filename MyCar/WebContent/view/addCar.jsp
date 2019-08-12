@@ -17,6 +17,7 @@
    Cena <input type="text" name="Cena"> <br>
    Boja <input type="text" name="Boja"> <br>
    GodinaProizvodnje <input type="text" name="GodinaProizvodnje"> <br>
+   Stanje <input type="text" name="Stanje">
            <input type="submit" value="DODAJ"> <br>
            
    
