@@ -80,5 +80,8 @@
  
  </form>
  
+ <a href="logout.jsp" class="button">Logout</a><br><br>
+ 
+ 
  </body>
  </html>
