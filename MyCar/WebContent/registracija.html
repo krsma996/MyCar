@@ -8,21 +8,24 @@
 		type= "text/css"
 		href = "css/style.css"
 	>
-	<style>
-	  body {
-	background-image: url("slike/ford.jpg");
-	background-position: center;
-	height: 700px;
-	background-size: cover;
-	
- }
-	
-	</style>
+
 </head>
 <body>
-<h1 class="h1">Welcome to Register Page</h1>
-<br>
-<a href="index.html" class="button">Index</a>
+<div class="header">
+  <a href="index.html" class="logo"><img src="slike/logo 1.png" width="168" height="49"></a>
+  <div class="header-right">
+    <a class="active" href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+    <a href="About.html">About</a>
+    <a href="registracija.html" class="button"> SignUp</a>
+    <a href="login.html" class="button"> Login</a>
+    
+    
+  </div>
+</div>
+<div class="textJustify">
+<p>Please you need to register in order to rent our vehicle</p>
+</div>
 
    <form id="formaRegistracija" action="RegistracioniServlet" method="get">
         <input type="text" placeholder="User name" name = "UserName"/> <br><br>
@@ -32,13 +35,37 @@
 		<input type="password" placeholder="Repeat password" name="RepeatedPassword"/><br><br>
 		<br><br>
 		<input type="submit" value="Sign Up!"/>
-   
-   
-   
    </form>
+   
+</body>
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Na Vrh</button>
 
 
+<div style="background-color:white;padding:30px 30px 2500px"></div>
 
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 
 </body>
 </html>
