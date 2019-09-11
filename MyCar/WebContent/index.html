@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Index Page</title>
-  <link
+<meta charset="ISO-8859-1">
+<title>Home Page</title>
+ <link
 		rel = "stylesheet"
 		type= "text/css"
 		href = "css/style.css"
 	>
-	
-	
-	
+
 </head>
 <body>
-
 <div class="header">
   <a href="index.html" class="logo"><img src="slike/logo 1.png" width="168" height="49"></a>
   <div class="header-right">
@@ -26,21 +23,59 @@
     
   </div>
 </div>
-
-<div style="padding-left:20px">
-  <h1>Welcome to MasterPlan Rent a Car</h1>
-  <p>If you want to rent our car you need to register please click SignUp</p>
-</div>
-</html>
-
+ 
+</body>
 <body>
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">Na Vrh</button>
+<div style="background-image:url('slike/pozadinamustang.jpg');background-size:cover ;background-repeat:no-repeat; ;padding:30px 30px 2500px">
+ <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="slike/audi1.jpg">
+      <img src="slike/audi1.jpg" alt="audi1" width="700" height="500">
+    </a>
+    <div class="desc"><h2 class="h2"> Audi A6 </h2>></div>
+  </div>
+</div>
 
 
-<div style="background-color:white;padding:30px 30px 2500px"></div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="slike/audiq7.jpg">
+      <img src="slike/audiq7.jpg" alt="audiq7" width="700" height="500">
+    </a>
+    <div class="desc"><h2 class="h2"> Audi Q7 </h2>></div>
+  </div>
+</div>
 
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="slike/bmw.jpg">
+      <img src="slike/bmw.jpg" alt="bmw" width="700" height="500">
+    </a>
+    <div class="desc"><h2 class="h2">BMW X3</h2>></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="slike/ford.jpg">
+      <img src="slike/ford.jpg" alt="ford" width="700" height="500">
+    </a>
+    <div class="desc"><h2 class="h2">FORD MUSTANG GT 2018 HELLCAT </h2>></div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+</div>
+
+</div>
 <script>
+
 //Get the button
 var mybutton = document.getElementById("myBtn");
 
@@ -61,5 +96,22 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 </script>
+</body>
+
+
+
+
+
+
+
+<body>
+<nav class="navbar navbar-default">
+  <div class="container">
+  </div>
+</nav>
+<footer class="container-fluid bg-4 text-center">
+  <p>Footer <a href="About.html">About me</a></p> 
+</footer>
 
 </body>
+</html>
