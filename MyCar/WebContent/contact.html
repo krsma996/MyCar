@@ -6,7 +6,7 @@
       <link
 		rel = "stylesheet"
 		type= "text/css"
-		href = "css/style.css"
+		href = "css/contact.css"
 	>
 </head>
 <body>
@@ -28,7 +28,64 @@
 <button onclick="topFunction()" id="myBtn" title="Go to top">Na Vrh</button>
 
 
-<div style="background-color:white;padding:30px 30px 2500px"></div>
+<div style="background-color:white;padding:30px 30px 50px"></div>
+ <body>
+
+<h3>You can contact us anythime</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+    <label for="fname">Email</label>
+    <input type="text" id="fname" name="email" placeholder="Your email..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="australia">Serbia</option>
+      <option value="canada">China</option>
+      <option value="usa">Russia</option>
+    </select>
+
+    <label for="subject">Your Message</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Send Message">
+  </form>
+</div>
+
+</body>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <script>
 //Get the button
@@ -53,4 +110,5 @@ function topFunction() {
 </script>
 
 </body>
+
 </html>
